@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipe Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            overflow-x: none;
+            background-color: #e2efed;
+            overflow:hidden
+            /* background-image: linear-gradient(98deg,#e2efed,#ffffff 100%); */
+        }
+
+        .navcontainer {
+            width: 100vw;
+            /* background-color: rgba(255, 73, 73, 0.966); */
+            background-color: #000000;
+            background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        #navlist {
+            padding: 15px;
+            width: 100%;
+            list-style: none;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-left: 15px;
+            margin-right: 15px; */
+        }
+
+        #navlogo {
+            font-size: 2.8rem;
+            color: white;
+            text-decoration: underline;
+        }
+
+        #navlogo:hover {
+            color: rgb(236, 209, 209);
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: azure;
+            text-decoration: underline;
+        }
+        a:hover{
+            color:black;
+        }
+
+        #navitems {
+            display: flex;
+            gap: 40px;
+            /* text-decoration: underline; */
+        }
+
+        .footerbox {
+            background-color: #000000;
+            background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+            color: azure;
+            width: 100%;
+            text-align: center;
+            min-height: 40px;
+        }
+
+        .footerbox p {
+            color: azure;
+            font-size: 2rem;
+        }
+
+        .contentbox {
+            width: 50%;
+            margin: auto;
+            /* border: 1px solid black; */
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            padding: 2.3rem;
+            box-shadow: 0px 0px 30px black;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .rightbox {
+            position: relative;
+            overflow: hidden;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+            box-shadow: 0px 0px 20px black;
+            border-radius: 20px;
+        }
+
+        .rightbox img {
+            border-radius: 20px;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+
+        .rightbox:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .rightbox .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(36, 34, 34, 0.713);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+        }
+
+        .rightbox:hover .overlay {
+            opacity: 1;
+        }
+
+        .rightbox .overlay span {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .leftbox {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .leftbox h2 {
+            font-size: 4rem;
+            text-decoration: underline;
+            color: chocolate;
+        }
+        .leftbox h2:hover{
+            color:black;
+            cursor: pointer;
+        }
+
+        .ingbox {
+            padding: 10px 10px;
+            font-size: 2rem;
+            font-family: 'Playball', cursive;
+            /* font-family: 'Roboto Slab', serif; */
+        }
+
+        .recipebox {
+            font-size: 1.7rem;
+            font-family: 'Playball', cursive;
+            /* font-family: 'Roboto Slab', serif; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navlist">
+                        <li>
+                            <p id="navlogo">AANAND VIHAR</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href="#">Home</a>
+                                <a href="#">About Us</a>
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="contentbox">
+                <!-- item 1 -->
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <h2>Item:-Gulab Jamun</h2>
+                            <div>
+                                <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                    <li>Sugar</li>
+                                    <li>Bread</li>
+                                    <li>Oil</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Recipe</h2>
+                                <ol class="recipebox">
+                                    <li> Boil sugar and water to prepare syrup remove from fire. Add cardamom and keep
+                                        aside to cool.
+                                    </li>
+                                    <li>In a mixing bowl put the flour, paneer, sooji, Nestlé MILKMAID, baking powder
+                                        and baking soda. Mix gently to make a soft dough. Do not knead too much</li>
+                                    <li>Divide the mixture into 30-35 portions and gently roll into round gulab jamuns.
+                                        Fry in the oil at very low flame till golden brown in color.</li>
+                                    <li>Keep putting the fried gulab jamuns in the prepared sugar syrup. Once all the
+                                        gulab jamuns are in the sugar syrup bring it to a boil and remove from flame.
+                                    </li>
+                                    <li>Serve warm</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+                            <img src="gulab jamun.jpg" alt="">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <h2>Item:-Kaju Katli</h2>
+                            <div>
+                                <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                    <li>Sugar</li>
+                                    <li>Bread</li>
+                                    <li>Oil</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Recipe</h2>
+                                <ol class="recipebox">
+                                    <li>Crush kaju to a fine powder. Put all the ingredients together and grind to a
+                                        smooth paste.
+                                    </li>
+                                    <li>Transfer to a thick bottomed kadai and cook on a slow fire until the mixture
+                                        starts leaving the slides and forms a ball.</li>
+                                    <li> Put the mixture in a tray and roll out thinly (1/8”). Cool and cut into diamond
+                                        shapes.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+                            <img src="KajuKatli.webp" alt="">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footerbox">
+                <p>
+                    copyright &copy; Aanand Vihar Pvt Ltd 2023
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background-color: beige;
+        border: 5px solid black;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+    }
+
+    .box {
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        font-style: italic;
+        font-size: 50px;
+        font-family: cursive;
+
+    }
+
+    #box1 {
+        background-color: aqua;
+        border: 4px solid brown;
+        
+    }
+
+    #box2 {
+        background-color: red;
+        border: 4px solid brown;
+    }
+
+    #box3 {
+        background-color: green;
+        border: 4px solid brown;
+    }
+
+    #box4 {
+        background-color: orange;
+        border: 4px solid brown;
+    }
+    @media(min-width:640px){
+        .container{
+            flex-direction: row;
+        }
+    }
+    @media(max-width:640px){
+        .container{
+            flex-direction: column ;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+        <!-- <div class="box" id="box5">E</div>
+        <div class="box" id="box6">F</div> -->
+    </div>
+
+    
+</body>
+</html>

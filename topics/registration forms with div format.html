@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms With DIV Format</title>
+</head>
+
+<body bgcolor="orange" text="white">
+    <form action="backend.php">
+        <h2>CREATE YOUR ACCOUNT</h2>
+        <hr>
+        <div>
+            <label for="name">NAME:</label>
+            <input type="text" placeholder="enter your name" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="role">ENTER ROLE:</label>
+        <input type="text" placeholder="enter your role" name="myrole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">ENTER EMAIL:</label>
+             <input type="email" placeholder="enter your email id" name="myemail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">ENTER PASSWORD:</label>
+             <input type="password" placeholder="enter your password" name="mypasswprd" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="date">ENTER DATE OF BIRTH:</label>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="myeligibility">ARE YOU ELIGIBLE?:</label>
+            <input type="checkbox" name="myeligibility" id="myeligibility">
+        </div>
+        <br>
+        <div>
+            GENDER: Male<input type="radio" name="mygender"> female<input type="radio" name="mygender"> other<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            write about yourself:<br><textarea name="mytext"  cols="30" rows="10"></textarea>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height:250px;
+            margin:4px;
+        }
+        .box{
+            background-color: aquamarine;
+            border: 2px solid aqua;
+            width: 330px;
+            height: 400px;
+            padding: 5px;
+            margin: 5px;
+            /* for sharp shadow */
+            box-shadow: 5px 5px brown;
+
+            /* shadow with blur */
+            /* box-shadow: 10px 10px 5px brown; */
+
+            /* shadow with blur spread */
+            /* box-shadow: -10px 10px 5px 100px brown; */
+
+            /* shadow inside the div */
+            /* box-shadow: inset 10px 5px brown; */
+        }
+        #head1{
+            text-shadow: 5px 5px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="img1.jpg">
+            <h2 id="head1">Welcome Mintu Kumar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit accusantium ex minima temporibus veritatis at distinctio illum necessitatibus debitis, magni, ad odit saepe ut!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

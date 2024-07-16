@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: beige;
+            width: 100vw;
+            height: 100vh;
+            border: 5px solid black;
+
+        }
+        .box{
+            height: 100px;
+            width: 350px;
+            background-color:chartreuse;
+            border: 4px solid yellow;
+            border-radius: 4px;
+            margin: 4px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            animation-timing-function:ease-in-out;
+            animation-direction: alternate;
+            /* animation-fill-mode: both; */
+        }
+        @keyframes rightmovement {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1550px;
+            }
+            
+        }
+        #box2{
+            height: 100px;
+            width: 350px;
+            background-color:chartreuse;
+            border: 4px solid yellow;
+            border-radius: 4px;
+            margin: 4px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: leftmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            animation-timing-function:ease-in-out;
+            animation-direction: alternate;
+            /* animation-fill-mode: both; */
+
+
+        }
+        @keyframes leftmovement {
+            from{
+                top: 550px;
+                left: 1350px;
+            }
+            to{
+                top: 550px;
+                left: 0;
+            }
+            
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color:chartreuse;
+            border: 4px solid yellow;
+            /* border-radius: 4px; */
+            margin: 10px;
+            position: relative;
+            border-radius: 50px;
+            top: 30%;
+            left: 40%;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay:0s;
+            animation-timing-function:ease-in-out;
+            animation-direction: alternate;
+            /* animation-fill-mode:both ; */
+            animation-play-state: running;
+        }
+        @keyframes circle {
+            0%{
+                top: 1%;
+                left: 1%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 60%;
+                left: 10%;
+            }
+            100%{
+                top: 65%;
+                left: 80%;
+            }
+
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>MINTU KUMAR</h3>
+        </div>
+        <div class="circle">
+
+        </div>
+        <div id="box2">
+            <h3>Welcome Mintu Kumar</h3>
+        </div>
+    </div>
+    
+</body>
+</html>

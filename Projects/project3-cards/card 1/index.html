@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDS</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8BC6EC;
+            background-image:linear-gradient(135deg #8BC6EC 0%,#9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 500px;
+            height: 700px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            box-shadow: 2px 4px 20px 10px rgb(114, 114, 114);
+        }
+        .box img{
+            padding: 30px;
+            height: 60%;
+            border-radius: 50px;  
+        }
+        .box h2{
+            font-size: 30px;
+            padding-left: 20px;
+            /* font-weight: bolder; */
+            text-decoration: underline;
+        }
+        .box p{
+            font-size: 2em;
+            font-weight:100;
+            padding: 10px;
+        }
+        .box img:hover{
+            transform: scale(1.1);
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="download.png">
+            <h2>
+                Improve your front end skills buy developing Projects!
+            </h2>
+            <p>
+                Scan the QR code to visit Front End mentor and take your coding skills to next level.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            width: 450px;
+            margin: 3px;
+            padding: 10px; 
+        } 
+        #boxleft{
+            background-color: aquamarine;
+            border: 1px solid blue;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column; 
+        }
+        #boxright{
+            background-color: yellow;
+            border: 1px solid brown;
+            width: 47%; 
+            margin: 3px;
+            padding: 2px; 
+        }
+        img{
+            width: 200px;
+            /* border: 4px solid black; */
+            /* background-color: yellow; */
+        }
+        p{
+            border: 2px solid red;
+            
+        }
+        @media (max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+                <p>MINTU KUMAR</p>
+                <p>MINTU KUMAR</p>
+        </div>
+        <div id="boxright">
+            <img src="img1.jpg" alt="my pics">
+        </div>
+    </div>
+    
+</body>
+</html>

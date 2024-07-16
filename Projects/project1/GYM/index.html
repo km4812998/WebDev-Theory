@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mintu Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            /* background: url(pics.jpg); */
+            font-family: 'Playball', cursive;
+            background: url(pics.jpg);
+            background-size:cover;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 410px;
+            /* filter: 100%; */
+        }
+
+        .left img:hover {
+            cursor: pointer;
+        }
+
+        .left div {
+            padding: 10px;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+
+        .left div:hover,
+        .left div:active {
+            color: black;
+            cursor: pointer;
+            background-color: grey;
+        }
+
+        .mid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid green; */
+            margin: 20px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 50px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            text-decoration: underline;
+            padding: 20px;
+            /* margin:10px
+         */
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: black;
+            background-color: grey;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 15px 40px;
+            font-size: 50px;
+            border: 2px solid black;
+            border-radius: 50px;
+            font-family: 'Playball', cursive;
+        }
+
+        .btn:hover {
+            color: black;
+            cursor: pointer;
+            background-color: grey;
+        }
+
+        .container {
+            border: 2px solid white;
+            font-size: 30px;
+            margin: 500px auto;
+            padding: 20px 200px;
+            width: 20%;
+            border-radius: 20px;
+            display: inline-block;
+            top: 20px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 93%;
+            border: 2px solid black;
+            border-radius: 40px;
+            font-size: 30px;
+            padding: 10px;
+            font-family: 'Playball', cursive;
+            margin: 15px;
+        }
+
+        .container h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container button {
+            display: block;
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="download.png" alt="">
+            <div>
+                MINTU FITNESS
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">CALL US</button>
+            <button class="btn">EMAIL US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>JOIN THE BEST GYM</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your email id">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your nummber">
+            </div>
+            <div>
+                <button class="btn">
+                    submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

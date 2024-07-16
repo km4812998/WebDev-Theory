@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        p{
+            color:pink;
+            background-color: red;
+        }
+    </style>
+</head>
+<body bgcolor=" brown">
+    <h3 style="color: white;">CREATE YOUR ACCOUNT</h3><hr>
+    <form action="">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text"placeholder="your name" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email"placeholder="your email" name="myemail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="mypassword" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="number">Phone Number:</label>
+            <input type="text" name="mynumber"id="number">
+        </div>
+        <br>
+        <div>
+            GENDER: Male<input type="radio" name="mygender"> female<input type="radio" name="mygender"> other<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            <label for="language">language:</label>
+            <select name="mylanguaage" id="language">
+                <option value="english">english</option>
+                <option value="hindi">hindi</option>
+                <option value="bengali">bengali</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" name="myzipcode"id="zipcode">
+        </div>
+        <br>
+        <label for="about yourself">About:</label>
+        <br><textarea name="mytext" id="about yourself" cols="30" rows="10" placeholder="write about yourself.."></textarea>
+        <br>
+        <div>
+            <label for="submit"></label>
+            <input type="submit" name="mysubmit" id="sumbit">
+
+            <label for="reset"></label>
+            <input type="reset" name="myreset" id="reset">
+        </div>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIONS</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 1000px;
+        }
+        div{
+            border: 2px solid black;
+        }
+        img{
+            width: 250px;
+            height: 300px;
+            margin: 10px;
+        }
+         .image2{
+            position: relative;
+            /* top: 100px; */
+        }
+        .image3{
+            position:sticky;
+            top: 10px;
+        }
+        .image4{
+            position:fixed;
+        }
+        .box{
+            background-color: aqua;
+            height: 2000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img1.jpg" alt="my pics1" class="image1">
+        <img src="img2.jpg" alt="my pics2" class="image2">
+        <img src="img3.jpg" alt="my pics3" class="image3">
+        <img src="img4.jpg" alt="my pics4" class="image4">
+    </div>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>
